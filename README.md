@@ -47,6 +47,8 @@ We proceed to Data Cleaning where we first remove irrelevant Columns, then we pr
 
 Of which, these numberical filter were determined by plotting out box-whisker graph and removing prominent outliers. Once the data were filtered, we were left with 1197 players for our project.
 
+![plot](./Common Data File/Screenshot 2023-03-28 171628.png)
+
 
 #### Exploratory Data Analysis
 
