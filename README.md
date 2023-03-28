@@ -36,7 +36,16 @@ In this projectm, we will be taking a look at player's data to determine what ar
 
 ![Clash Royale](https://gifdb.com/images/high/video-game-clash-royale-laughing-king-emote-5ms9vhxu14101bam.gif)
 #### Data Preparation & Cleaning
+Source: https://developer.clashroyale.com/#/documentation
+Through the official Royale API, we obtained 960 randomly picked clans with a minimiun clan members of 20, the data which is retrieved through Postman and extracted in the form of JSON. The clan tag were obtained which we then took only 100 clans and retrieved all the players tag in those clans, which we further got individual player details via another API Request Call. This gives us a initial player base of 3695 Player Data.
+Of those 3695 player, via their player tag, we also retrieved top 3 recent battle log of all the players.
 
+We proceed to Data Cleaning where we first remove irrelevant Columns, then we proceed to filter out certain players based on the following requirements:
+1. Player must have at least played 10 matches
+2. Player must play no more than 40,000 matches
+3. Player must have a throphy count of more than 1000
+
+Of which, these numberical filter were determined by plotting out box-whisker graph and removing prominent outliers. Once the data were filtered, we were left with 1197 players for our project.
 
 
 #### Exploratory Data Analysis
