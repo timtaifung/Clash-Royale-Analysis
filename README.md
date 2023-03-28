@@ -37,18 +37,21 @@ In this projectm, we will be taking a look at player's data to determine what ar
 ![Clash Royale](https://gifdb.com/images/high/video-game-clash-royale-laughing-king-emote-5ms9vhxu14101bam.gif)
 #### Data Preparation & Cleaning
 Source: https://developer.clashroyale.com/#/documentation
-Through the official Royale API, we obtained 960 randomly picked clans with a minimiun clan members of 20, the data which is retrieved through Postman and extracted in the form of JSON. The clan tag were obtained which we then took only 100 clans and retrieved all the players tag in those clans, which we further got individual player details via another API Request Call. This gives us a initial player base of 3695 Player Data.
-Of those 3695 player, via their player tag, we also retrieved top 3 recent battle log of all the players.
 
-We proceed to Data Cleaning where we first remove irrelevant Columns, then we proceed to filter out certain players based on the following requirements:
-1. Player must have at least played 10 matches
-2. Player must play no more than 40,000 matches
-3. Player must have a throphy count of more than 1000
+We conducted a data collection process to obtain a sample of players for our project. Using the official Royale API, we randomly selected **960 clans** with a minimum of 20 members, and retrieved the clan tags through Postman in the form of JSON. From this initial set, we narrowed it down to a final sample of **100 clans**, from which we extracted individual player tags. We used another API request call to retrieve the player details for these tags, resulting in a total of **3,695 player records**.
 
-Of which, these numberical filter were determined by plotting out box-whisker graph and removing prominent outliers. Once the data were filtered, we were left with 1197 players for our project.
+To ensure the quality of our data, we conducted a data cleaning process. First, we removed irrelevant columns. Then, we applied numerical filters to remove certain players based on the following requirements:
 
-![plot](./Common Data File/Screenshot 2023-03-28 171628.png)
+The player must have played at least 10 matches.
+The player must have played no more than 40,000 matches.
+The player must have a trophy count of more than 1,000.
+To determine these numerical filters, we plotted a box-whisker graph and removed prominent outliers. After filtering the data, we were left with a final sample of 1,197 players for our project.
 
+In addition to the player details, we also retrieved the top 3 recent battle logs for each player. This data will be used to analyze player performance and behavior in Clash Royale.
+
+![comparison](https://user-images.githubusercontent.com/64196627/228193008-8d43abf1-1ed2-4dd2-9fea-c279a0aea6a4.png)
+
+Currently now, we have 2 primary datasets that we will use for further exploration, battle_logs, and player_info
 
 #### Exploratory Data Analysis
 
