@@ -14,14 +14,15 @@ Members:
 ##### This repository contains all the Jupyter Notebook and datasets we have used and created as part of the Mini Project for SC1015: Introduction to Data Science and Artificial Intelligence.
 ##### This README briefly goes through the accomplisment as well as the elaboration of dataset.
 ---
+
 #### Table of Content
-1. Problem Formulation
-2. Data Preparation & Cleaning
-3. Exploratory Data Analysis
-4. Dimensionality Reduction
-5. CLustering
-6. Data Driven Insights & Conclusion
-7. References
+1. [Problem Formulation](####-Problem-Formulation)
+2. [Data Preparation & Cleaning](####-Data-Preparation-&-Cleaning)
+3. [Exploratory Data Analysis](####-Exploratory-Data-Analysis)
+4. [Dimensionality Reduction](####-Dimensionality-Reduction)
+5. [Clustering](####-Clustering)
+6. [Data Driven Insights & Conclusion](####-Data-Driven-Insights-&-Conclusion)
+7. [References](####-References)
 ---
 #### Problem Formulation
 ![Clash Royale](https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/02/clash-royale-man-and-match.jpg)
