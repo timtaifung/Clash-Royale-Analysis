@@ -24,7 +24,7 @@ Members:
 6. [Data Driven Insights & Conclusion](####-Data-Driven-Insights-&-Conclusion)
 7. [References](####-References)
 ---
-#### Problem Formulation
+## Problem Formulation
 ![Clash Royale](https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/02/clash-royale-man-and-match.jpg)
 Clash Royale has always been a nostalgic game we played as a child, filled with magical characters, thrilling battles, and endless excitement. Whether you're a seasoned player or just starting out, Clash Royale offers a unique and engaging experience that keeps you coming back for more. The pprimary gameplay was simple, challenge player around the word on a 1v1, each player having 8 character cards, the winner wins crowns while the loser loses it. With over 100 over Character Cards with all of them having unique abilities and elixist requirement, it is stragetic game that gives player multiple ways to win the game.
 
@@ -36,9 +36,10 @@ In this project, we will be taking a look at player's data to determine what are
 5. Does total playtime affect win rates?
 
 ![Clash Royale](https://gifdb.com/images/high/video-game-clash-royale-laughing-king-emote-5ms9vhxu14101bam.gif)
-#### Data Preparation & Cleaning
+## Data Preparation & Cleaning
 Source: https://developer.clashroyale.com/#/documentation
 
+### Player Data Cleaning
 We conducted a data collection process to obtain a sample of players for our project. Using the official Royale API, we randomly selected **960 clans** with a minimum of 20 members, and retrieved the clan tags through Postman in the form of JSON. From this initial set, we narrowed it down to a final sample of **100 clans**, from which we extracted individual player tags. We used another API request call to retrieve the player details for these tags, resulting in a total of **3,695 player records**.
 
 To ensure the quality of our data, we conducted a data cleaning process. First, we removed irrelevant columns. Then, we applied numerical filters to remove certain players based on the following requirements:
@@ -48,23 +49,30 @@ The player must have played no more than 40,000 matches.
 The player must have a trophy count of more than 1,000.
 To determine these numerical filters, we plotted a box-whisker graph and removed prominent outliers. After filtering the data, we were left with a final sample of 1,197 players for our project.
 
-In addition to the player details, we also retrieved the top 3 recent battle logs for each player. This data will be used to analyze player performance and behavior in Clash Royale.
+### Battle Log Cleaning
+From the ``97 Players, we then obtained their top 20 recently battle logs through API Calling. The data is then initally filtered for "PvP" Gamemode only, leaving us with a total dataset of 10,401 matches for review.
 
 ![comparison](https://user-images.githubusercontent.com/64196627/228193008-8d43abf1-1ed2-4dd2-9fea-c279a0aea6a4.png)
 
-Currently now, we have 2 primary datasets that we will use for further exploration, battle_logs, and player_info
-
-#### Exploratory Data Analysis
+Once that is done, as the API data is very messy, we filtered the column names and added in some of our own leaving us with only the useful variables for comparision for further analysis and machine learning.
 
 
-#### Dimensionality Reduction
+## Exploratory Data Analysis
+### Card Analysis
+In the game, we have a total of 109 cards, with each card having their own unique abilities and exlixir cost. Out of those 109 cards, a player will then select 8 cards to form a deck. 
+
+- Highest Cost: Three Musketeers (9 Exlixir)
+- Lowest Cost: Ice Spirit (1 Exlixir)
+
+### Player Analysis
+We first conducted some Single Variable Data representation on basis varibles such as thophies, 3CrownWins and experience level, giving us the following breakdown.
+![single](https://user-images.githubusercontent.com/64196627/228193008-8d43abf1-1ed2-4dd2-9fea-c279a0aea6a4.png)
+
+## Machine Learning
 
 
-#### Clustering
+## Data Driven Insights & Conclusion
 
 
-#### Data Driven Insights & Conclusion
-
-
-#### References
+## References
 
