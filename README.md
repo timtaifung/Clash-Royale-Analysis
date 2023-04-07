@@ -49,10 +49,12 @@ The player must have played no more than 40,000 matches.
 The player must have a trophy count of more than 1,000.
 To determine these numerical filters, we plotted a box-whisker graph and removed prominent outliers. After filtering the data, we were left with a final sample of 1,197 players for our project.
 
+![comparison](https://user-images.githubusercontent.com/64196627/228193008-8d43abf1-1ed2-4dd2-9fea-c279a0aea6a4.png)
+
+
 ### Battle Log Cleaning
 From the ``97 Players, we then obtained their top 20 recently battle logs through API Calling. The data is then initally filtered for "PvP" Gamemode only, leaving us with a total dataset of 10,401 matches for review.
 
-![comparison](https://user-images.githubusercontent.com/64196627/228193008-8d43abf1-1ed2-4dd2-9fea-c279a0aea6a4.png)
 
 Once that is done, as the API data is very messy, we filtered the column names and added in some of our own leaving us with only the useful variables for comparision for further analysis and machine learning.
 
@@ -66,7 +68,25 @@ In the game, we have a total of 109 cards, with each card having their own uniqu
 
 ### Player Analysis
 We first conducted some Single Variable Data representation on basis varibles such as thophies, 3CrownWins and experience level, giving us the following breakdown.
-![single](https://user-images.githubusercontent.com/64196627/228193008-8d43abf1-1ed2-4dd2-9fea-c279a0aea6a4.png)
+
+![single](https://github.com/timtaifung/timtaifung-NTU-SC1015-Mini-Project/blob/main/Common/Initial%20Cleaning/single%20Variable.png)
+
+![single](https://raw.githubusercontent.com/timtaifung/timtaifung-NTU-SC1015-Mini-Project/main/Common/Initial%20Cleaning/Arena%20Breakdown.png)
+
+From the data, we can infer that our player's trophies lies within mainly in the 4000 to 5500 ranges. hence, most players will exists in at Arena 15 to Arena 17.
+
+## Battle Analysis
+From the 10,401 battles, we gathered Most Common Card, Best Deck By Win rate & Frequency and current Meta.
+
+### Top 3 Most Common Deck
+![single](https://raw.githubusercontent.com/timtaifung/timtaifung-NTU-SC1015-Mini-Project/main/Common/Initial%20Cleaning/Common.png)
+
+### Top 3 Most Won Deck
+![single](https://raw.githubusercontent.com/timtaifung/timtaifung-NTU-SC1015-Mini-Project/main/Common/Initial%20Cleaning/MostWin.png)
+
+### Current Meta
+![single](https://raw.githubusercontent.com/timtaifung/timtaifung-NTU-SC1015-Mini-Project/main/Common/Initial%20Cleaning/meta.png)
+
 
 ## Machine Learning
 
