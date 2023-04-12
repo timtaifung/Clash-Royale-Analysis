@@ -2,7 +2,7 @@
 School of Computer Science and Engineering
 Nanyang Technological University
 Lab: B140
-Group : 6
+Group : 7
 
 Members:
 
