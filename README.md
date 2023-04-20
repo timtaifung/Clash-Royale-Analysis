@@ -2,7 +2,7 @@
 School of Computer Science and Engineering
 Nanyang Technological University
 Lab: B140
-Group : 6
+Group : 7
 
 Members:
 
@@ -29,11 +29,11 @@ Members:
 Clash Royale has always been a nostalgic game we played as a child, filled with magical characters, thrilling battles, and endless excitement. Whether you're a seasoned player or just starting out, Clash Royale offers a unique and engaging experience that keeps you coming back for more. The pprimary gameplay was simple, challenge player around the word on a 1v1, each player having 8 character cards, the winner wins crowns while the loser loses it. With over 100 over Character Cards with all of them having unique abilities and elixist requirement, it is stragetic game that gives player multiple ways to win the game.
 
 In this project, we will be taking a look at player's data to determine what are the key citeria for players to win consistently. We will primirly be taking a look at these quetions.
-1. What is the best Deck Combination for winning?
-2. Is there a best "broken" Card for winning?
-3. Is climbing trophy level difficulty consisted across all arenas?
-4. How management of Elixir Leak affect win rate?
-5. Does total playtime affect win rates?
+1. What is the probability of winning a battle given a certain combination of cards?
+2. How does card level affect the win rates?
+3. Which specific card is the most effective in winning battles?
+4. Which cards are most commonly used by top players?
+5. Does the management of elixir usage affect win rate? (Elixir Leakage)
 
 ![Clash Royale](https://gifdb.com/images/high/video-game-clash-royale-laughing-king-emote-5ms9vhxu14101bam.gif)
 ## Data Preparation & Cleaning
@@ -90,6 +90,13 @@ From the 10,401 battles, we gathered Most Common Card, Best Deck By Win rate & F
 
 ## Machine Learning
 
+| machine Learning Question | Machine Learning Approaches  |
+| ---------------| --------------- |
+| 1. What is the probability of winning a battle given a certain combination of cards? | 1. Naive Bayes<br>2. Neural Networks<br>3. K-Nearest Neighbors |
+| 2. How does card level affect the win rates? | Linear Regression Model |
+| 3. Which specific card is the most effective in winning battles? | 1. Decision Trees<br>2. Random Forests<br>3. Gradient Boosting |
+| 4. Which cards are most commonly used by top players? | 1. Association Rule Mining<br>2. Logistic Regression<br>3. Support Vector Machines |
+| 5. Does the management of elixir usage affect win rate? (Elixir Leakage) | TBC |
 
 ## Data Driven Insights & Conclusion
 
