@@ -99,7 +99,12 @@ From the 10,401 battles, we gathered Most Common Card, Best Deck By Win rate & F
 | 5. Does the management of elixir usage affect win rate? (Elixir Leakage) | TBC |
 
 ## Data Driven Insights & Conclusion
+1. Certain cards prominents shows the usage of it will have a slightly higher chance at winning such as the valkries.
+2. Card Combination of the deck plays a important factors in win condition, with the best one being the Mega Knight + Bats combo
+3. Higher Card levels found to significant increase win rate. Showing that Grinding to increase level of cards definitely have a higher chance of winning
 
+However, Our sample data that was used was not sufficient as there are other factos that we are unable to take into full consideration such as player's specific strategy such as card placement during matches and how specific cards were used to counter the enemies. Data were also limited to specific period and player base, resulting in some biasnes of current meta.
 
 ## References
-
+https://developer.clashroyale.com/#/documentation (Class Royale API)
+https://www.kaggle.com/datasets/rodsaldanha/clash-royale-matches?resource=download (Statistic of Specific Cards)
