@@ -1,9 +1,3 @@
-
-#### Description:
-##### This repository contains all the Jupyter Notebook and datasets we have used and created as part of the Mini Project for SC1015: Introduction to Data Science and Artificial Intelligence.
-##### This README briefly goes through the accomplisment as well as the elaboration of dataset.
----
-
 #### Table of Content
 1. [Problem Formulation](####-Problem-Formulation)
 2. [Data Preparation & Cleaning](####-Data-Preparation-&-Cleaning)
